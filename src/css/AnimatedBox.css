@@ -1,0 +1,92 @@
+@keyframes move-around-border {
+  0% {
+    border-image-source: linear-gradient(
+      0deg,
+      #d4fbfc,
+    #45e8ed,
+    #69edf1,
+    #54d5d9,
+    #2c9393,
+    #1c8084,
+    #114941
+    );
+    background-position: 0% 50%;
+  }
+
+  25% {
+    border-image-source: linear-gradient(
+      90deg,
+      #d4fbfc,
+      #45e8ed,
+      #69edf1,
+      #54d5d9,
+      #2c9393,
+      #1c8084,
+      #114941
+    );
+    background-position: 25% 50%;
+  }
+
+  50% {
+    border-image-source: linear-gradient(
+      180deg,
+      #d4fbfc,
+      #45e8ed,
+      #69edf1,
+      #54d5d9,
+      #2c9393,
+      #1c8084,
+      #114941
+    );
+    background-position: 50% 50%;
+  }
+
+  75% {
+    border-image-source: linear-gradient(
+      270deg,
+      #d4fbfc,
+      #45e8ed,
+      #69edf1,
+      #54d5d9,
+      #2c9393,
+      #1c8084,
+      #114941
+    );
+    background-position: 75% 50%;
+  }
+
+  100% {
+    border-image-source: linear-gradient(
+      360deg,
+      #d4fbfc,
+      #45e8ed,
+      #69edf1,
+      #54d5d9,
+      #2c9393,
+      #1c8084,
+      #114941
+    );
+    background-position: 100% 50%;
+  }
+}
+
+.animated-border-box {
+  border-width: 2px;
+  border-style: solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    0deg,
+    #d4fbfc,
+    #45e8ed,
+    #69edf1,
+    #54d5d9,
+    #2c9393,
+    #1c8084,
+    #114941
+  );
+  background-color: transparent; /* Transparent background */
+  animation: move-around-border 5s linear infinite; /* Infinite border animation */
+  border-radius: 16px;
+  padding: 20px; /* Padding inside the box */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for visibility */
+}
